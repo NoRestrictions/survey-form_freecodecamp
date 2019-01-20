@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1 id="title">Contact Form</h1>
+        </header> 
+        <section class="container">
+            <p id="description">Please fill in the appropriate details below</p>
+            <form id="survey-form" action="" class="form">
+                
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" id="name" name="name"  required placeholder="Name">
+
+                <label for="email" id="email-label">Email: </label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+                
+                <label for="number" id="number-label">Age: </label>
+                <input type="number" name="age" id="number" required min="1" max="50" placeholder="Age">
+                
+                <label for="product">What service would you like to contact us on? </label>
+                <select name="" id="dropdown" class="dropdown">
+                    <option value="0">Please Select One</option>
+                    <option value="1">Advertising</option>
+                    <option value="2">Brand Management</option>
+                    <option value="3">Blog</option>
+                    <option value="4">News</option>
+                    <option value="5">Style</option>
+                </select>
+
+                <label for="frequency">How often do you use any of our services?</label>
+                <div class="entry">
+                    <li><input type="radio" name="service" value="daily">Daily</li>
+                    <li><input type="radio" name="service" value="weekly">Weekly</li>
+                    <li><input type="radio" name="service" value="monthly">Monthly</li>
+                    <li><input type="radio" name="service" value="occ">Occasionally</li>
+                    <li><input type="radio" name="service" value="never">Never</li>
+                </div>
+            
+                <label for="product">Which of our products do you enjoy most? </label>
+                <select name="" id="dropdown" class="dropdown">
+                    <option value="0">Please Select One</option>
+                    <option value="1">Advertising</option>
+                    <option value="2">Brand Management</option>
+                    <option value="3">Blog</option>
+                    <option value="4">News</option>
+                    <option value="5">Style</option>
+                </select>
+
+                <label for="improvement">Which areas would you like us to serve you better?</label>
+                <div class="entry">
+                    <li><input type="checkbox" name="" id="" value="Advertising">Advertising</li>
+                    <li><input type="checkbox" name="" id="" value="Brand">Brand Management</li>
+                    <li><input type="checkbox" name="" id="" value="Blog">Blog</li>
+                    <li><input type="checkbox" name="" id="" value="News">News</li>
+                    <li><input type="checkbox" name="" id="" value="Style">Style</li>
+                </div>
+
+                <label for="message">Message: </label>
+                <textarea name="comments" id="" rows="4" maxlength="500" placeholder="Enter Message Here..."></textarea>
+        
+                <label for="question">Are you human?<br> <strong>45 - 7?</strong></label>
+                <input type="text" name="question" id="captcha" required>
+                    
+                <button type="submit" id="submit" class="btn">Submit</button>
+                   
+               
+            </form>
+        </section>
+                
+    </div>
+    
+</body>
+</html>
